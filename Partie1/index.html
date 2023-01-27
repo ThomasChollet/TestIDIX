@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Partie 1</title>
+</head>
+
+<body>
+    <section id="search-section">
+        <form id="search-form">
+            <div class="search">
+                <label id="search-label" for="site-search">Recherche</label>
+                <input type="search" id="recherche" name="barrederecherche" placeholder="Mots-clés...">
+            </div>
+            <div class="form-button">
+                <button class="search-button">Valider</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="wrapper">
+        <section id="articles-list">
+            <article>
+                <div class="article-illustration">
+                    <img src="https://picsum.photos/100">
+                </div>
+
+                <div class="article-text">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sequi ratione officia ex enim fuga praesentium doloremque.</p>
+                </div>
+            </article>
+            <hr>
+
+            <article>
+                <div class="article-illustration">
+                    <img src="https://picsum.photos/100">
+                </div>
+
+                <div class="article-text">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sequi ratione officia ex enim fuga praesentium doloremque beatae voluptas repudiandae a.</p>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <div class="article-illustration">
+                    <img src="https://picsum.photos/100">
+                </div>
+
+                <div class="article-text">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sequi ratione officia ex enim fuga praesentium doloremque beatae voluptas repudiandae a.</p>
+                </div>
+            </article>
+
+        </section>
+    </div>
+
+
+    <footer>
+        <nav id="nav-bar">
+            <div class="nav-rectangle empty-rectangle"></div>
+
+            <input class="radio-reset" type="radio" id="nav-choice-accueil" name="nav" value="Accueil" checked="checked">
+            <label onClick="window.location = '#articles-list';" class="nav-rectangle" for="nav-choice-accueil">Accueil</label>
+        
+            <input class="radio-reset" type="radio" id="nav-choice-politique" name="nav" value="Politique">
+            <label onClick="window.location = '#articles-list';" class="nav-rectangle" for="nav-choice-politique">Politique</label>
+        
+            <input class="radio-reset" type="radio" id="nav-choice-economie" name="nav" value="Economie">
+            <label onClick="window.location = '#articles-list';" class="nav-rectangle" for="nav-choice-economie">Economie</label>
+
+            <input class="radio-reset" type="radio" id="nav-choice-international" name="nav" value="International">
+            <label onClick="window.location = '#articles-list';" class="nav-rectangle" for="nav-choice-international">International</label>
+
+            <div class="nav-rectangle empty-rectangle"></div>
+
+        </nav>
+    </footer>
+
+    </body>
+</html>
